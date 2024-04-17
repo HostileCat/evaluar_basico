@@ -1,8 +1,8 @@
 function validarTarjeta(numero) {
-    const americanExpress = /^3[47][0-9]{13}$/;
-    const dinersClub = /^3(?:0[05]|[68][0-9])[0-9]{11}$/;
+    const americanExpress = /^3[4-7][0-9]{13}$/;
+    const dinersClub = /^3(?:0[0-5]|[6-8][0-9])[0-9]{11}$/;
     const discover = /^6011[0-9]{12}$/;
-    const mastercard = /^5[15][0-9]{14}$/;
+    const mastercard = /^5[1-5][0-9]{14}$/;
     const visa = /^4[0-9]{15}$/;
 
     if (americanExpress.test(numero)) {
